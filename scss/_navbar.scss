@@ -1,0 +1,24 @@
+.nav-item a {
+    transition: background-color .3;
+}
+
+.nav-item a:hover {
+    background-color: #82C1E8;
+}
+.header {
+    background-color: #FAAF82;
+}
+
+
+.navbar-collapse {
+    justify-content: end;
+    .navbar-brand{
+        color: white;
+    text-shadow: 1px 0px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+    }
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    text-shadow: 1px 0px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+    margin: 0px 25px;
+}

@@ -1,0 +1,71 @@
+.catalogo-de-productos{
+    h3{
+        font-size: 27px;
+        text-align: center;
+        padding: 10px;
+        color: $colorTitulos;
+        text-shadow: $sombraTitulos;
+    }
+    h2{
+        font-size: 26px;
+        text-align: center;
+        padding-top: 14px;
+        color: $colorTitulos;
+        text-shadow: $sombraTitulos;
+    }
+    .productos-festivos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+        gap: 5px;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: 1s;
+        }
+
+        img:hover {
+            filter: opacity(.4);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+    }
+}
+.productosTienda{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+    padding-bottom: 35px;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    img:hover{
+        filter: opacity(.4);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+@media screen and (min-width: 1024px){
+    .catalogo-de-productos{
+        h3, h2{
+            font-size: 55px;
+            padding: 15px;
+        }
+        .productos-festivos{
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px;
+            gap: 32px;
+        }
+    }
+    .productosTienda{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+        gap: 36px;
+    }
+}

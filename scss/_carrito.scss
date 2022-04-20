@@ -1,0 +1,18 @@
+.main__carrito{
+    height: 50rem;
+    .carrito-cantidad{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .number-of-items {
+        position: relative;
+        right: 3.5rem;
+        width: 85px;
+    }
+    .carrito__items {
+        text-align: center;
+        margin-top: 5rem;
+    }
+}

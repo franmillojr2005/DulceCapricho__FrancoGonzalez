@@ -1,0 +1,31 @@
+.nosotrosDescripcion {
+    margin: 15px;
+    h1{
+        font-size: 28px;
+        text-align: start;
+        color:$colorTitulos;
+        text-shadow: $sombraTitulos;
+        padding: 10px;
+    }
+    p{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+.container-contacto {
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+    .contacto-dulcecapricho {
+        background-color: #FAAF82;
+    }
+}
+@media screen and (min-width: 1024px){
+    .nosotrosDescripcion{
+        h1{
+            font-size: 39px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}

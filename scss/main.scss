@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    
+    width: 100%;
+    height: auto;
+    
+    .body-dulcecapricho{
+        background-color: #82C1E8; 
+        min-height: 100%;
+    }
+}
+
+$colorTitulos:white ;
+$sombraTitulos:0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+
+@import "navbar";
+@import "footer";
+
+@import "index";
+@import "tienda";
+@import "nosotros";
+@import "novedades";
+@import "carrito";
