@@ -1,17 +1,15 @@
 .titulo h1 {
     padding: 1rem;
     text-align: center;
-    color:$colorTitulos;
-    text-shadow:$sombraTitulos ;
-    font-size: 1.5rem;
+    @include titulos;
+    font-size: 2rem;
 
 }
 .ig__container{
     margin-bottom: 6rem;
     .ig__text{
         text-align: center;
-        color:$colorTitulos ;
-        text-shadow: $sombraTitulos;
+        @include titulos;
         font-size: 1rem;
         transition: 1s;
     }
@@ -19,6 +17,20 @@
         transform: scale(1.2);
     }
 
+}
+.card-body{
+    a{
+      text-decoration: none;
+      color: white;
+      background-color: map-get($map:$color , $key:primario );
+      border-radius: 5px;
+      padding: 5px;
+      transition: 0.2s;
+    }
+    a:hover{
+        color: antiquewhite;
+    }
+    
 }
 @media screen and (min-width: 1024px) {
     .ig__container .ig__text {

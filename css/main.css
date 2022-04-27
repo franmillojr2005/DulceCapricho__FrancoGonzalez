@@ -3,13 +3,11 @@
   padding: 0;
 }
 
-html {
+html, body {
   font-family: 'Raleway', sans-serif;
-  width: 100%;
-  height: auto;
 }
 
-html .body-dulcecapricho {
+html .body-dulcecapricho, body .body-dulcecapricho {
   background-color: #82C1E8;
   min-height: 100%;
 }
@@ -56,6 +54,8 @@ html .body-dulcecapricho {
       -ms-flex-align: center;
           align-items: center;
   background-color: #FAAF82;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .container .lista-footer {
@@ -74,7 +74,7 @@ html .body-dulcecapricho {
   text-align: center;
   color: white;
   text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .ig__container {
@@ -93,6 +93,20 @@ html .body-dulcecapricho {
 .ig__container .ig__text:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.card-body a {
+  text-decoration: none;
+  color: white;
+  background-color: #82C1E8;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card-body a:hover {
+  color: antiquewhite;
 }
 
 @media screen and (min-width: 1024px) {
@@ -170,7 +184,7 @@ html .body-dulcecapricho {
 }
 
 @media screen and (min-width: 1024px) {
-  .catalogo-de-productos h3, .catalogo-de-productos h2 {
+  .catalogo-de-productos h3, .catalogo-de-productos h1 {
     font-size: 55px;
     padding: 15px;
   }
@@ -249,7 +263,7 @@ html .body-dulcecapricho {
   padding: 5px;
   text-decoration: underline;
   color: white;
-  text-decoration: none;
+  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
 }
 
 .novedades p {
@@ -258,19 +272,7 @@ html .body-dulcecapricho {
   margin: 3px;
 }
 
-.novedades-uno {
-  background-color: #6c757d;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.novedades-dos {
-  background-color: #6c757d;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.novedades-tres {
+.novedades-uno, .novedades-dos, .novedades-tres {
   background-color: #6c757d;
   border-radius: 10px;
   padding: 5px;
@@ -283,9 +285,9 @@ html .body-dulcecapricho {
 
 .novedades-mapa p {
   margin: 1rem;
-  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
   font-size: 1.5rem;
   color: white;
+  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
 }
 
 @media screen and (min-width: 1024px) {

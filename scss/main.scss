@@ -1,27 +1,31 @@
+$color:(
+    primario:#82C1E8,
+    secundario: #FAAF82
+    );
+    $colorTitulos:white ;
+    $sombraTitulos:0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+    @mixin titulos {
+        color: white;
+        text-shadow:0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+    }
 * {
+    
     margin: 0;
     padding: 0;
 
 }
 
-html {
+html, body {
     font-family: 'Raleway', sans-serif;
     
-    width: 100%;
-    height: auto;
-    
     .body-dulcecapricho{
-        background-color: #82C1E8; 
+        background-color:map-get($map:$color , $key: primario); 
         min-height: 100%;
     }
 }
 
-$colorTitulos:white ;
-$sombraTitulos:0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
-
 @import "navbar";
 @import "footer";
-
 @import "index";
 @import "tienda";
 @import "nosotros";

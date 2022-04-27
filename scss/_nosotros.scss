@@ -3,8 +3,7 @@
     h1{
         font-size: 28px;
         text-align: start;
-        color:$colorTitulos;
-        text-shadow: $sombraTitulos;
+        @include titulos;
         padding: 10px;
     }
     p{

@@ -3,15 +3,13 @@
         font-size: 27px;
         text-align: center;
         padding: 10px;
-        color: $colorTitulos;
-        text-shadow: $sombraTitulos;
+        @include titulos;
     }
     h2{
         font-size: 26px;
         text-align: center;
         padding-top: 14px;
-        color: $colorTitulos;
-        text-shadow: $sombraTitulos;
+        @include titulos;
     }
     .productos-festivos {
         display: grid;
@@ -53,7 +51,7 @@
 }
 @media screen and (min-width: 1024px){
     .catalogo-de-productos{
-        h3, h2{
+        h3, h1{
             font-size: 55px;
             padding: 15px;
         }

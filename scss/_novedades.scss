@@ -1,8 +1,7 @@
 .novedades-titulo {
     text-align: center;
     margin-top: 10px;
-    color:$colorTitulos;
-    text-shadow:$sombraTitulos;
+    @include titulos;
 }
 .novedades{
     display: grid;
@@ -17,8 +16,7 @@
         font-size: 20px;
     padding: 5px;
     text-decoration: underline;
-    color:$colorTitulos;
-    text-decoration: none;
+    @include titulos;
     }
     p{
         font-size: 1rem;
@@ -33,24 +31,19 @@
 }
 
 .novedades-dos {
-    background-color: #6c757d;
-    border-radius: 10px;
-    padding: 5px;
+    @extend .novedades-uno;
 }
 
 .novedades-tres {
-    background-color: #6c757d;
-    border-radius: 10px;
-    padding: 5px;
+    @extend .novedades-uno;
 }
 .novedades-mapa {
     text-align: center;
     margin: 1rem;
     p{
         margin: 1rem;
-        text-shadow: $sombraTitulos;
         font-size: 1.5rem;
-        color:$colorTitulos;
+        @include titulos;
     }
 }
 @media screen and (min-width: 1024px) {
