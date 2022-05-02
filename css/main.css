@@ -13,12 +13,13 @@ html .body-dulcecapricho, body .body-dulcecapricho {
 }
 
 .nav-item a {
-  -webkit-transition: background-color .3;
-  transition: background-color .3;
+  -webkit-transition: background-color .2;
+  transition: background-color .2;
 }
 
 .nav-item a:hover {
   background-color: #82C1E8;
+  border-radius: 15px;
 }
 
 .header {
@@ -26,9 +27,9 @@ html .body-dulcecapricho, body .body-dulcecapricho {
 }
 
 .navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-collapse .navbar-brand {
@@ -54,8 +55,6 @@ html .body-dulcecapricho, body .body-dulcecapricho {
       -ms-flex-align: center;
           align-items: center;
   background-color: #FAAF82;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .container .lista-footer {
@@ -118,69 +117,91 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   }
 }
 
-.catalogo-de-productos h3 {
-  font-size: 27px;
-  text-align: center;
-  padding: 10px;
+.catalogo-de-productos .titulo-productos {
   color: white;
   text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
-}
-
-.catalogo-de-productos h2 {
-  font-size: 26px;
   text-align: center;
-  padding-top: 14px;
-  color: white;
-  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+  font-size: 2rem;
 }
 
-.catalogo-de-productos .productos-festivos {
+.catalogo-de-productos .festivos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 15px;
+}
+
+.catalogo-de-productos .festivos img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.catalogo-de-productos .festivos .festivos-uno, .catalogo-de-productos .festivos .festivos-dos, .catalogo-de-productos .festivos .festivos-tres {
+  width: 100%;
+  height: 98%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: gray;
+  -webkit-box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  text-align: center;
+  color: white;
+}
+
+.catalogo-de-productos .festivos .festivos-uno:hover, .catalogo-de-productos .festivos .festivos-dos:hover, .catalogo-de-productos .festivos .festivos-tres:hover {
+  -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+}
+
+.catalogo-de-productos .festivos .festivos-uno h2, .catalogo-de-productos .festivos .festivos-dos h2, .catalogo-de-productos .festivos .festivos-tres h2 {
+  font-size: 1rem;
+}
+
+.productos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 5px;
-  gap: 5px;
 }
 
-.catalogo-de-productos .productos-festivos img {
+.productos img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-.catalogo-de-productos .productos-festivos img:hover {
-  -webkit-filter: opacity(0.4);
-          filter: opacity(0.4);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.productosTienda {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  padding: 5px;
-  padding-bottom: 35px;
-}
-
-.productosTienda img {
+.productos-imagen {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  height: 98%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: gray;
+  -webkit-box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  text-align: center;
+  color: white;
 }
 
-.productosTienda img:hover {
-  -webkit-filter: opacity(0.4);
-          filter: opacity(0.4);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+.productos-imagen:hover {
+  -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-1%);
+          transform: translateY(-1%);
+}
+
+.productos-imagen h2 {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -188,15 +209,15 @@ html .body-dulcecapricho, body .body-dulcecapricho {
     font-size: 55px;
     padding: 15px;
   }
-  .catalogo-de-productos .productos-festivos {
+  .catalogo-de-productos .festivos {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     gap: 32px;
   }
-  .productosTienda {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+  .productos {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 20px;
     gap: 36px;
   }
@@ -207,6 +228,7 @@ html .body-dulcecapricho, body .body-dulcecapricho {
 }
 
 .nosotrosDescripcion h1 {
+  text-align: center;
   font-size: 28px;
   text-align: start;
   color: white;
@@ -214,8 +236,15 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   padding: 10px;
 }
 
+.nosotrosDescripcion .descripcion {
+  background-color: #FAAF82;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+
 .nosotrosDescripcion p {
-  font-size: 15px;
+  font-size: 1rem;
   padding: 5px;
 }
 
@@ -263,7 +292,6 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   padding: 5px;
   text-decoration: underline;
   color: white;
-  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
 }
 
 .novedades p {
@@ -273,9 +301,22 @@ html .body-dulcecapricho, body .body-dulcecapricho {
 }
 
 .novedades-uno, .novedades-dos, .novedades-tres {
-  background-color: #6c757d;
-  border-radius: 10px;
-  padding: 5px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background: gray;
+  -webkit-box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.novedades-uno:hover, .novedades-dos:hover, .novedades-tres:hover {
+  -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .novedades-mapa {

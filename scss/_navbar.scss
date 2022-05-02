@@ -1,9 +1,11 @@
+
 .nav-item a {
-    transition: background-color .3;
+    transition: background-color .2;
 }
 
 .nav-item a:hover {
     background-color:map-get($map:$color, $key:primario );
+    border-radius: 15px;
 }
 .header {
     background-color:map-get($map:$color , $key:secundario )
@@ -11,7 +13,7 @@
 
 
 .navbar-collapse {
-    justify-content: end;
+    justify-content: center;
     .navbar-brand{
         color: white;
     text-shadow: 1px 0px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;

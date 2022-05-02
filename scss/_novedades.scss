@@ -16,7 +16,7 @@
         font-size: 20px;
     padding: 5px;
     text-decoration: underline;
-    @include titulos;
+    color: $colorTitulos;
     }
     p{
         font-size: 1rem;
@@ -25,17 +25,28 @@
     }
 }
 .novedades-uno {
-    background-color: #6c757d;
-    border-radius: 10px;
-    padding: 5px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: gray;
+    box-shadow: 3px 7px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    &:hover{
+        
+            box-shadow: 6px 14px 5px rgba(0,0,0,0.2);
+            transform: translateY(-3%);
+    
+    }
 }
+
 
 .novedades-dos {
     @extend .novedades-uno;
 }
 
 .novedades-tres {
-    @extend .novedades-uno;
+    @extend .novedades-uno; 
 }
 .novedades-mapa {
     text-align: center;

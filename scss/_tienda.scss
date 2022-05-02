@@ -1,68 +1,92 @@
 .catalogo-de-productos{
-    h3{
-        font-size: 27px;
-        text-align: center;
-        padding: 10px;
+    .titulo-productos{
         @include titulos;
-    }
-    h2{
-        font-size: 26px;
         text-align: center;
-        padding-top: 14px;
-        @include titulos;
+        font-size: 2rem;
     }
-    .productos-festivos {
+
+    .festivos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 5px;
-        gap: 5px;
-        img {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        img{
             width: 100%;
             height: auto;
             border-radius: 10px;
-            transition: 1s;
         }
+        .festivos-uno{
+            width: 100%;
+            height: 98%;
+            border-radius:5px;
+             overflow: hidden;
+             background: gray;
+             box-shadow: 3px 7px 10px rgba(0,0,0,0.2);
+            cursor: default;
+              transition: all 400ms ease;
+              text-align: center;
+              color:$colorTitulos;
+            &:hover{
+            box-shadow: 6px 14px 5px rgba(0,0,0,0.2);
+            transform: translateY(-1%);
+         }
+         h2{
+             font-size: 1rem;
+         }
 
-        img:hover {
-            filter: opacity(.4);
-            -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+        }
+        .festivos-dos, .festivos-tres{
+            @extend .festivos-uno;
         }
     }
 }
-.productosTienda{
-    display:grid ;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding: 5px;
-    padding-bottom: 35px;
 
+    
+
+.productos{
+    display:grid ;
+    grid-template-columns: 1fr 1fr ;
+    padding: 5px;
     img{
         width: 100%;
-        height: auto;
-        border-radius: 10px;
-        transition: 1s;
+            height: auto;
+            border-radius: 10px;
+        }
     }
-    img:hover{
-        filter: opacity(.4);
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
+    .productos-imagen{
+        width: 100%;
+        height: 98%;
+        border-radius:5px;
+         overflow: hidden;
+         background: gray;
+         box-shadow: 3px 7px 10px rgba(0,0,0,0.2);
+        cursor: default;
+          transition: all 400ms ease;
+          text-align: center;
+          color:$colorTitulos;
+        &:hover{
+        box-shadow: 6px 14px 5px rgba(0,0,0,0.2);
+        transform: translateY(-1%);
+        }
+        h2{
+            font-size: 1rem;
+        }
+    
     }
-}
+
 @media screen and (min-width: 1024px){
     .catalogo-de-productos{
         h3, h1{
             font-size: 55px;
             padding: 15px;
         }
-        .productos-festivos{
+        .festivos{
             grid-template-columns: 1fr 1fr 1fr;
             padding: 10px;
             gap: 32px;
         }
     }
-    .productosTienda{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .productos{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 20px;
         gap: 36px;
     }
