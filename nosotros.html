@@ -19,9 +19,8 @@
 </head>
 <!-- Barra de navegacion -->
 
-<body class="body-dulcecapricho">
-  <article class="article-nosotros">
-
+<body class="body__dulcecapricho">
+  <article class="article__nosotros">
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid d-flex justify-content-around">
@@ -54,11 +53,11 @@
       </nav>
 
     </header>
-    <main class="main-nosotros">
+    <main class="main__nosotros">
       <!-- Descripcion de dulce capricho -->
-      <div class="nosotrosDescripcion">
+      <div class="nosotros__titulo">
         <h1><strong> Dulce Capricho </strong></h1>
-        <div class="container descripcion">
+        <div class="container nosotros__descripcion">
           <div class="row">
             <div class="col padding-3">
               <h2>Que hacemos?</h2>
@@ -75,6 +74,7 @@
         </div>
       </div>
       <!-- Ficha de contacto -->
+      <form>
       <div class="container contact container-contacto">
         <div class="row">
           <div class="col-md-3 contacto-dulcecapricho rounded-3">
@@ -84,46 +84,47 @@
               <h4 class="text-center"> ¡Nos encantaría saber tu opinion!</h4>
             </div>
           </div>
-          <div class="col-md-9">
-            <div class="contact-form">
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="fname">Nombre:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="fname" placeholder="Ingrasar nombre" name="fname">
+            <div class="col-md-9">
+              <div class="contact-form">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="fname">Nombre:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" placeholder="Ingrasar nombre" name="fname">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="lname">Apellido:</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="lname" placeholder="Ingresar apellido" name="lname">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="lname">Apellido:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" placeholder="Ingresar apellido" name="lname">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" placeholder="Ingresar email:" name="email">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Ingresar email:" name="email">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="comment">Comentarios:</label>
-                <div class="col-sm-10">
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="comment">Comentarios:</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="button" class="btn btn-secondary">Enviar</button>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </main>
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <ul class="lista-footer">
+        <ul class="lista__footer">
           <li> <a href="https://www.instagram.com/dulcecaprichobrc/?hl=es-la"><i class="bi bi-instagram"></a></i></li>
           <li> <a href="https://api.whatsapp.com/message/FOIR626LYL33O1?autoload=1&app_absent=0"><i
                 class="bi bi-whatsapp"></i></a></li>

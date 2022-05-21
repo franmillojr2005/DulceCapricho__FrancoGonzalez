@@ -1,18 +1,36 @@
 .main__carrito{
     height: 50rem;
+    
     .carrito-cantidad{
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
+        
+        h1{
+            @include titulos;
+            margin: 0.5rem;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 0px .1px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;;
+        margin: 0.5rem;
     }
     .number-of-items {
         position: relative;
-        right: 3.5rem;
-        width: 85px;
+        right: 0.5rem;
+        
     }
     .carrito__items {
         text-align: center;
         margin-top: 5rem;
+    }
+    .carrito__text{
+        text-align: center;
+        margin-top: 9rem;
+        color: white;
+        text-shadow: 0px .1px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
     }
 }

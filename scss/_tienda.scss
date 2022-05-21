@@ -1,11 +1,11 @@
-.catalogo-de-productos{
-    .titulo-productos{
+.main__productos{
+    .main__titulo__productos{
         @include titulos;
         text-align: center;
         font-size: 2rem;
     }
 
-    .festivos{
+    .main__productos___festivos{
         display: grid;
         grid-template-columns: 1fr;
         padding: 15px;
@@ -14,7 +14,7 @@
             height: auto;
             border-radius: 10px;
         }
-        .festivos-uno{
+        .main__productos___festivos1{
             width: 100%;
             height: 98%;
             border-radius:5px;
@@ -30,29 +30,32 @@
             transform: translateY(-1%);
          }
          h2{
-             font-size: 1rem;
+            font-size: 1rem;
+            padding-top: 0.5rem;
          }
 
         }
-        .festivos-dos, .festivos-tres{
-            @extend .festivos-uno;
+        .main__productos___festivos2, .main__productos___festivos3{
+            @extend .main__productos___festivos1;
         }
     }
 }
 
     
 
-.productos{
+.catalogo__productos{
     display:grid ;
     grid-template-columns: 1fr 1fr ;
     padding: 5px;
+    gap: 0.2rem;
     img{
         width: 100%;
             height: auto;
             border-radius: 10px;
+            padding-bottom: .3rem;
         }
     }
-    .productos-imagen{
+    .catalogo__imagen{
         width: 100%;
         height: 98%;
         border-radius:5px;
@@ -69,23 +72,24 @@
         }
         h2{
             font-size: 1rem;
+            padding-bottom: .5rem;
         }
     
     }
 
 @media screen and (min-width: 1024px){
-    .catalogo-de-productos{
+    .main__productos{
         h3, h1{
             font-size: 55px;
             padding: 15px;
         }
-        .festivos{
+        .main__productos___festivos{
             grid-template-columns: 1fr 1fr 1fr;
             padding: 10px;
             gap: 32px;
         }
     }
-    .productos{
+    .catalogo__productos{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 20px;
         gap: 36px;

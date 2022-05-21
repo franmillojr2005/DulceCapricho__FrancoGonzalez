@@ -7,7 +7,7 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
-html .body-dulcecapricho, body .body-dulcecapricho {
+html .body__dulcecapricho, body .body__dulcecapricho {
   background-color: #82C1E8;
   min-height: 100%;
 }
@@ -57,7 +57,7 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   background-color: #FAAF82;
 }
 
-.container .lista-footer {
+.container .lista__footer {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +68,7 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   margin-top: 13px;
 }
 
-.titulo h1 {
+.main__titulo h1 {
   padding: 1rem;
   text-align: center;
   color: white;
@@ -117,14 +117,14 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   }
 }
 
-.catalogo-de-productos .titulo-productos {
+.main__productos .main__titulo__productos {
   color: white;
   text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
   text-align: center;
   font-size: 2rem;
 }
 
-.catalogo-de-productos .festivos {
+.main__productos .main__productos___festivos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -132,13 +132,13 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   padding: 15px;
 }
 
-.catalogo-de-productos .festivos img {
+.main__productos .main__productos___festivos img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.catalogo-de-productos .festivos .festivos-uno, .catalogo-de-productos .festivos .festivos-dos, .catalogo-de-productos .festivos .festivos-tres {
+.main__productos .main__productos___festivos .main__productos___festivos1, .main__productos .main__productos___festivos .main__productos___festivos2, .main__productos .main__productos___festivos .main__productos___festivos3 {
   width: 100%;
   height: 98%;
   border-radius: 5px;
@@ -153,32 +153,35 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   color: white;
 }
 
-.catalogo-de-productos .festivos .festivos-uno:hover, .catalogo-de-productos .festivos .festivos-dos:hover, .catalogo-de-productos .festivos .festivos-tres:hover {
+.main__productos .main__productos___festivos .main__productos___festivos1:hover, .main__productos .main__productos___festivos .main__productos___festivos2:hover, .main__productos .main__productos___festivos .main__productos___festivos3:hover {
   -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-1%);
           transform: translateY(-1%);
 }
 
-.catalogo-de-productos .festivos .festivos-uno h2, .catalogo-de-productos .festivos .festivos-dos h2, .catalogo-de-productos .festivos .festivos-tres h2 {
+.main__productos .main__productos___festivos .main__productos___festivos1 h2, .main__productos .main__productos___festivos .main__productos___festivos2 h2, .main__productos .main__productos___festivos .main__productos___festivos3 h2 {
   font-size: 1rem;
+  padding-top: 0.5rem;
 }
 
-.productos {
+.catalogo__productos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 5px;
+  gap: 0.2rem;
 }
 
-.productos img {
+.catalogo__productos img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  padding-bottom: .3rem;
 }
 
-.productos-imagen {
+.catalogo__imagen {
   width: 100%;
   height: 98%;
   border-radius: 5px;
@@ -193,29 +196,30 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   color: white;
 }
 
-.productos-imagen:hover {
+.catalogo__imagen:hover {
   -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-1%);
           transform: translateY(-1%);
 }
 
-.productos-imagen h2 {
+.catalogo__imagen h2 {
   font-size: 1rem;
+  padding-bottom: .5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .catalogo-de-productos h3, .catalogo-de-productos h1 {
+  .main__productos h3, .main__productos h1 {
     font-size: 55px;
     padding: 15px;
   }
-  .catalogo-de-productos .festivos {
+  .main__productos .main__productos___festivos {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     gap: 32px;
   }
-  .productos {
+  .catalogo__productos {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 20px;
@@ -223,11 +227,11 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   }
 }
 
-.nosotrosDescripcion {
+.nosotros__titulo {
   margin: 15px;
 }
 
-.nosotrosDescripcion h1 {
+.nosotros__titulo h1 {
   text-align: center;
   font-size: 28px;
   text-align: start;
@@ -236,14 +240,18 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   padding: 10px;
 }
 
-.nosotrosDescripcion .descripcion {
+.nosotros__titulo h1 strong {
+  font-weight: 100;
+}
+
+.nosotros__titulo .nosotros__descripcion {
   background-color: #FAAF82;
   border-radius: 10px;
   text-align: center;
   padding-top: 15px;
 }
 
-.nosotrosDescripcion p {
+.nosotros__titulo p {
   font-size: 1rem;
   padding: 5px;
 }
@@ -266,14 +274,14 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   }
 }
 
-.novedades-titulo {
+.novedades__titulo {
   text-align: center;
   margin-top: 10px;
   color: white;
   text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
 }
 
-.novedades {
+.article__novedades {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -281,26 +289,26 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   padding: 15px;
 }
 
-.novedades img {
+.article__novedades img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.novedades h2 {
+.article__novedades h2 {
   font-size: 20px;
   padding: 5px;
   text-decoration: underline;
   color: white;
 }
 
-.novedades p {
+.article__novedades p {
   font-size: 1rem;
   color: white;
   margin: 3px;
 }
 
-.novedades-uno, .novedades-dos, .novedades-tres {
+.article__novedades-uno, .article__novedades-dos, .article__novedades-tres {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
@@ -312,19 +320,19 @@ html .body-dulcecapricho, body .body-dulcecapricho {
   transition: all 400ms ease;
 }
 
-.novedades-uno:hover, .novedades-dos:hover, .novedades-tres:hover {
+.article__novedades-uno:hover, .article__novedades-dos:hover, .article__novedades-tres:hover {
   -webkit-box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 6px 14px 5px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-3%);
           transform: translateY(-3%);
 }
 
-.novedades-mapa {
+.novedades__mapa {
   text-align: center;
   margin: 1rem;
 }
 
-.novedades-mapa p {
+.novedades__mapa p {
   margin: 1rem;
   font-size: 1.5rem;
   color: white;
@@ -332,7 +340,7 @@ html .body-dulcecapricho, body .body-dulcecapricho {
 }
 
 @media screen and (min-width: 1024px) {
-  .novedades {
+  .article__novedades {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -365,14 +373,33 @@ html .body-dulcecapricho, body .body-dulcecapricho {
           justify-content: space-between;
 }
 
+.main__carrito .carrito-cantidad h1 {
+  color: white;
+  text-shadow: 0px 3px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+  margin: 0.5rem;
+}
+
+.main__carrito a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px .1px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
+  margin: 0.5rem;
+}
+
 .main__carrito .number-of-items {
   position: relative;
-  right: 3.5rem;
-  width: 85px;
+  right: 0.5rem;
 }
 
 .main__carrito .carrito__items {
   text-align: center;
   margin-top: 5rem;
+}
+
+.main__carrito .carrito__text {
+  text-align: center;
+  margin-top: 9rem;
+  color: white;
+  text-shadow: 0px .1px 0px #7e452a, 0px 2px 0px #7e452a, -1px 0px 0px #7e452a, 0px -1px 0px #7e452a;
 }
 /*# sourceMappingURL=main.css.map */

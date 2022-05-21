@@ -1,9 +1,9 @@
-.novedades-titulo {
+.novedades__titulo {
     text-align: center;
     margin-top: 10px;
     @include titulos;
 }
-.novedades{
+.article__novedades{
     display: grid;
     grid-template-columns: 1fr;
     padding: 15px;
@@ -24,7 +24,7 @@
         margin: 3px;
     }
 }
-.novedades-uno {
+.article__novedades-uno {
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
@@ -41,14 +41,14 @@
 }
 
 
-.novedades-dos {
-    @extend .novedades-uno;
+.article__novedades-dos {
+    @extend .article__novedades-uno;
 }
 
-.novedades-tres {
-    @extend .novedades-uno; 
+.article__novedades-tres {
+    @extend .article__novedades-uno; 
 }
-.novedades-mapa {
+.novedades__mapa {
     text-align: center;
     margin: 1rem;
     p{
@@ -59,7 +59,7 @@
 }
 @media screen and (min-width: 1024px) {
 
-    .novedades {
+    .article__novedades {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         text-align: center;

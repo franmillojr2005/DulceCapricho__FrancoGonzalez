@@ -18,7 +18,7 @@ $color:(
 html, body {
     font-family: 'Raleway', sans-serif;
     
-    .body-dulcecapricho{
+    .body__dulcecapricho{
         background-color:map-get($map:$color , $key: primario); 
         min-height: 100%;
     }
